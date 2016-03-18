@@ -152,7 +152,7 @@ aside {
 #background {
   position: fixed;
   z-index: -9999;
-  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
+  background: url(../img/bg.jpg) no-repeat fixed;
   background-size: cover;
   background-color: black;
   opacity: 0.8;
