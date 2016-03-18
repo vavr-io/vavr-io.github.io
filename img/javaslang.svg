@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg width="100%" height="auto" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <defs>
+        <symbol id="javaslang">
+            <desc>Javaslang</desc>
+            <!-- left facets -->
+            <polygon fill="white" fill-opacity="1" points="1,2 3,0 5,0 3,2 1,2" />
+            <polygon fill="white" fill-opacity=".9" points="1,2 3,4 5,4 3,2 1,2" />
+            <polygon fill="white" fill-opacity=".5" points="1,4 3,4 5,6 3,6 1,4" />
+            <!-- right facets -->
+            <polygon fill="white" fill-opacity=".5" points="7,2 5,0 7,0 9,2 7,2" />
+            <polygon fill="white" fill-opacity=".9" points="7,2 5,2 7,4 9,4 7,2" />
+            <polygon fill="white" fill-opacity="1" points="7,4 5,6 7,6 9,4 7,4" />
+            <!-- cube outline -->
+            <polyline points="0,3 3,0 7,0 10,3 7,6 3,6 0,3" style="fill:none; stroke:#ccc; stroke-width:0.05" />
+            <!-- cube front corner -->
+            <line x1="3" y1="0" x2="6" y2="3" style="stroke:white; stroke-width:0.05" />
+            <line x1="6" y1="3" x2="10" y2="3" style="stroke:white; stroke-width:0.05" />
+            <line x1="6" y1="3" x2="3" y2="6" style="stroke:white; stroke-width:0.05" />
+            <!-- cube facets -->
+            <polygon fill="#bbf" fill-opacity=".26" points="3,0 6,3 3,6 0,3" />
+            <polygon fill="#669" fill-opacity=".26" points="3,0 7,0 10,3 6,3 3,0" />
+            <polygon fill="#113" fill-opacity=".26" points="6,3 10,3 7,6 3,6 6,3" />
+        </symbol>
+    </defs>
+    <use xlink:href="#javaslang" transform="scale(1 1.25)" />
+</svg>
