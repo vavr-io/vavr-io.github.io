@@ -31,12 +31,8 @@ a {
     &:hover,
     &:focus {
         color: darken(@theme-primary, 10%);
+        text-decoration: none;
     }
-}
-
-a.primary {
-    .transition-all;
-    color: white;
 }
 
 h1,
@@ -324,6 +320,14 @@ header {
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
+    a {
+        .transition-all;
+        color: white;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
     p {
         margin-bottom: 0;
     }
@@ -334,6 +338,12 @@ header {
     margin: 50px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
+    }
+    a {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
     }
     p {
         margin-bottom: 0;
@@ -397,6 +407,9 @@ header {
 }
 
 .call-to-action {
+    a {
+        color: white;
+    }
     h2 {
         margin: 0 auto 20px;
     }

@@ -23,12 +23,7 @@ a {
 a:hover,
 a:focus {
   color: #8b543c;
-}
-a.primary {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-  color: white;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -299,6 +294,16 @@ header .header-content .header-content-inner pre[class*="language-"] {
     margin: 20px auto 0;
   }
 }
+.feature-box-primary a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: white;
+}
+.feature-box-primary a:hover,
+.feature-box-primary a:focus {
+  text-decoration: none;
+}
 .feature-box-primary p {
   margin-bottom: 0;
 }
@@ -310,6 +315,10 @@ header .header-content .header-content-inner pre[class*="language-"] {
   .feature-box {
     margin: 20px auto 0;
   }
+}
+.feature-box a:hover,
+.feature-box a:focus {
+  text-decoration: none;
 }
 .feature-box p {
   margin-bottom: 0;
@@ -364,6 +373,9 @@ header .header-content .header-content-inner pre[class*="language-"] {
   .feature-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+.call-to-action a {
+  color: white;
 }
 .call-to-action h2 {
   margin: 0 auto 20px;
