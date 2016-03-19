@@ -150,7 +150,7 @@
                       <div class="container">
                         <div class="carousel-caption">
                             <p>The <em>Try</em> monad represents the result state of a computation which may be a <em>Success</em> or a <em>Failure</em>.</p>
-                            <pre><code class="language-java">Try&lt;R&gt; result = Try.of(() -> mightFail())
+                            <pre><code class="language-java">R result = Try.of(() -> mightFail())
    .recover(x -> ...)
    .getOrElse(defaultValue);</code></pre>
                         </div>
