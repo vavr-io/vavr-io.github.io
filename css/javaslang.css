@@ -60,6 +60,21 @@ aside {
 .no-padding {
   padding: 0;
 }
+#background {
+  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
+  background-size: cover;
+  background-color: black;
+  opacity: 0.8;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -9999;
+}
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -143,20 +158,6 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #af6a4b;
   }
-}
-#background {
-  position: fixed;
-  z-index: -9999;
-  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
-  background-size: cover;
-  background-color: black;
-  opacity: 0.8;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
 }
 header {
   position: relative;
