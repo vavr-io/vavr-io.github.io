@@ -61,11 +61,11 @@ aside {
   padding: 0;
 }
 #background {
-  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
-  max-height: 100%;
   background-color: #4c91af;
+  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
+  background-size: auto 100%;
   opacity: 0.8;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -218,7 +218,6 @@ header .header-content .header-content-inner pre[class*="language-"] {
   font-size: 13px;
   margin: 0;
   padding: 0;
-  text-shadow: 0 .05em .1em white;
 }
 header .header-content .header-content-inner code[class*="language-"] .token.operator,
 header .header-content .header-content-inner pre[class*="language-"] .token.operator,
@@ -342,16 +341,21 @@ img.tweets {
   margin: 0 auto;
 }
 footer {
-  margin: 50px 0 50px;
+  background-color: #4c91af;
+  opacity: 0.5;
 }
 footer p {
   color: black;
   font-family: Arial;
   font-size: 13px;
+  margin: 50px 0 0;
 }
-footer p a,
+footer p a {
+  color: black;
+}
 footer p a:hover {
   color: black;
+  text-decoration: underline;
 }
 footer .yourkit {
   text-align: left;
