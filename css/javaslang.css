@@ -216,6 +216,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
   font-size: 13px;
   margin: 0;
   padding: 0;
+  text-shadow: 0 1px 2px white;
 }
 header .header-content .header-content-inner code[class*="language-"] .token.operator,
 header .header-content .header-content-inner pre[class*="language-"] .token.operator,
@@ -249,6 +250,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
   header .header-content .header-content-inner code[class*="language-"],
   header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 16px;
+    text-shadow: 0 1px white;
   }
 }
 @media (min-width: 768px) {
@@ -283,6 +285,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
   header .header-content .header-content-inner code[class*="language-"],
   header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 20px;
+    text-shadow: 0 1px white;
   }
 }
 .section-heading {
