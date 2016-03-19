@@ -345,7 +345,7 @@ footer {
 footer p {
   color: black;
   font-family: Arial;
-  font-size: 13px;
+  font-size: 11px;
   margin: 50px 0 0;
 }
 footer p a {
@@ -358,8 +358,12 @@ footer p a:hover {
 footer .yourkit {
   text-align: left;
 }
-footer .copyright {
-  font-size: 15px;
+footer .yourkit img.yklogo {
+  height: 22px;
+}
+footer .copyright p {
+  color: white;
+  font-size: 13px;
 }
 .text-primary {
   color: #af6a4b;
