@@ -116,7 +116,7 @@
                     <div class="item">
                       <div class="container">
                         <div class="carousel-caption">
-                            <p>The functional <em>For</em> is an expression that <em>yields</em> a value. This value is a lazy evaluated collection of elements.</p>
+                            <p>The functional <em>For</em> is an expression that <em>yields</em> a value. The result is a lazy evaluated collection of elements.</p>
                             <pre><code class="language-java">Iterator&lt;String&gt; iterator =
     For(persons.filter(Person::hasAddress), p ->
         For(p.addresses).yield(a ->
