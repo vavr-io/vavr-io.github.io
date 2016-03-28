@@ -216,7 +216,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
   font-size: 13px;
   margin: 0;
   padding: 0;
-  text-shadow: 0 1px 2px white;
+  text-shadow: 0 .05em .1em white;
 }
 header .header-content .header-content-inner code[class*="language-"] .token.operator,
 header .header-content .header-content-inner pre[class*="language-"] .token.operator,
@@ -250,7 +250,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
   header .header-content .header-content-inner code[class*="language-"],
   header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 16px;
-    text-shadow: 0 1px white;
+    text-shadow: 0 .05em .1em white;
   }
 }
 @media (min-width: 768px) {
