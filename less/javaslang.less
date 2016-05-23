@@ -376,35 +376,55 @@ img.tweets {
 }
 
 //
-// Footer
+// Sponsors
 //
 
-footer {
+#sponsors {
     background-color: #4c91af;
-    opacity: 0.7;
+    opacity: 0.6;
+    padding: 50px 0 80px;
     p {
-        color: black;
+        color: white;
         font-family: Arial;
-        font-size: 11px;
-        margin: 50px 0 0;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 10px 0 0;
         a {
-            color: black;
+            color: white;
+            text-decoration: underline;
             &:hover {
                 color: black;
                 text-decoration: underline;
             }
         }
     }
+    .jetbrains {
+        text-align: left;
+        img.idealogo {
+            height: 42px;
+        }
+    }
     .yourkit {
         text-align: left;
         img.yklogo {
-            height: 22px;
+            height: 42px;
         }
     }
-    .copyright {
+}
+
+//
+// Footer
+//
+
+footer {
+    background-color: white;
+    padding-top: 15px;
+    #copyright {
         p {
-            color: white;
-            font-size: 13px;
+            color: black;
+            opacity: 0.5;
+            font-family: Arial;
+            font-size: 11px;
         }
     }
 }
