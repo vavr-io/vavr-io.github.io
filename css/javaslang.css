@@ -208,18 +208,6 @@ header .header-content .header-content-inner pre[class*="language-"] {
   padding: 0;
   text-shadow: 0 .05em .1em white;
 }
-header .header-content .header-content-inner code[class*="language-"] .token.operator,
-header .header-content .header-content-inner pre[class*="language-"] .token.operator,
-header .header-content .header-content-inner code[class*="language-"] .token.entity,
-header .header-content .header-content-inner pre[class*="language-"] .token.entity,
-header .header-content .header-content-inner code[class*="language-"] .token.url,
-header .header-content .header-content-inner pre[class*="language-"] .token.url,
-header .header-content .header-content-inner code[class*="language-"] .language-css .token.string,
-header .header-content .header-content-inner pre[class*="language-"] .language-css .token.string,
-header .header-content .header-content-inner code[class*="language-"] .style .token.string,
-header .header-content .header-content-inner pre[class*="language-"] .style .token.string {
-  background: rgba(255, 255, 255, 0.1);
-}
 header .header-content .header-content-inner pre[class*="language-"] {
   display: inline-block;
   margin: 0 auto;
@@ -418,7 +406,7 @@ footer #copyright p {
   top: 0px;
 }
 .carousel-caption p {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 @media (min-width: 480px) {
   .carousel {
