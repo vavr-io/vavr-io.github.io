@@ -118,6 +118,9 @@ aside {
   .navbar-default .navbar-header .navbar-brand:focus {
     color: white;
   }
+  .navbar-default .navbar-header .navbar-brand img {
+    display: inline-block;
+  }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
     color: rgba(255, 255, 255, 0.7);
@@ -415,7 +418,7 @@ footer #copyright p {
   top: 0px;
 }
 .carousel-caption p {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 @media (min-width: 480px) {
   .carousel {
