@@ -1,5 +1,7 @@
+/*4b90af;*/
 html,
 body {
+  background-color: #5cbeea;
   height: 100%;
   width: 100%;
 }
@@ -42,7 +44,7 @@ p {
   background-color: #af6a4b;
 }
 .bg-dark {
-  background-color: #222;
+  background-color: #1a1a1a;
   color: white;
 }
 .bg-light {
@@ -60,27 +62,9 @@ aside {
 .no-padding {
   padding: 0;
 }
-#background {
-  background-color: #4c91af;
-  background: url(../img/bg.jpg) 50% 0 no-repeat fixed;
-  opacity: 0.8;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  z-index: -9999;
-}
-@media (min-width: 480px) {
-  #background {
-    background-size: cover;
-  }
-}
 .navbar-default {
   background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: rgba(26, 26, 26, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -97,17 +81,17 @@ aside {
   color: #794a34;
 }
 .navbar-default .navbar-header .navbar-brand img {
-  display: inline-block;
-  height: auto;
-  width: 26px;
-  margin-bottom: 3px;
+  display: none;
+  height: 22px;
+  width: auto;
+  margin-bottom: 8px;
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
-  color: #222;
+  color: #1a1a1a;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -144,7 +128,7 @@ aside {
   }
   .navbar-default.affix {
     background-color: white;
-    border-color: rgba(34, 34, 34, 0.05);
+    border-color: rgba(26, 26, 26, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #af6a4b;
@@ -153,9 +137,12 @@ aside {
   .navbar-default.affix .navbar-header .navbar-brand:focus {
     color: #794a34;
   }
+  .navbar-default.affix .navbar-header .navbar-brand img {
+    display: inline-block;
+  }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
-    color: #222;
+    color: #1a1a1a;
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
@@ -199,7 +186,7 @@ header .header-content .header-content-inner .brand-heading > * {
   display: inline-block;
 }
 header .header-content .header-content-inner img.brand-heading {
-  width: 40px;
+  width: 240px;
 }
 header .header-content .header-content-inner p {
   color: rgba(0, 0, 0, 0.8);
@@ -242,7 +229,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 20px;
   }
   header .header-content .header-content-inner img.brand-heading {
-    width: 60px;
+    width: 350px;
   }
   header .header-content .header-content-inner p {
     font-size: 16px;
@@ -274,7 +261,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 30px;
   }
   header .header-content .header-content-inner img.brand-heading {
-    width: 100px;
+    width: 650px;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -286,6 +273,11 @@ header .header-content .header-content-inner pre[class*="language-"] {
   header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 20px;
     text-shadow: 0 1px white;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-content .header-content-inner img.brand-heading {
+    width: 800px;
   }
 }
 .section-heading {
@@ -422,6 +414,9 @@ footer #copyright p {
   position: absolute;
   top: 0px;
 }
+.carousel-caption p {
+  color: white !important;
+}
 @media (min-width: 480px) {
   .carousel {
     height: 260px;
@@ -451,7 +446,7 @@ footer #copyright p {
   }
 }
 .btn-default {
-  color: #222;
+  color: #1a1a1a;
   background-color: white;
   border-color: white;
   -webkit-transition: all 0.35s;
@@ -464,7 +459,7 @@ footer #copyright p {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #222;
+  color: #1a1a1a;
   background-color: #f2f2f2;
   border-color: #ededed;
 }
@@ -496,7 +491,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: white;
-  background-color: #222;
+  background-color: #1a1a1a;
 }
 .btn-primary {
   color: white;
@@ -559,12 +554,12 @@ fieldset[disabled] .btn-primary.active {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #222;
+  background: #1a1a1a;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #222;
+  background: #1a1a1a;
 }
 img::selection {
   color: white;
@@ -575,5 +570,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #222;
+  webkit-tap-highlight-color: #1a1a1a;
 }
