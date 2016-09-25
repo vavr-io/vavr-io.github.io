@@ -213,24 +213,9 @@ header {
                 width: 240px;
             }
             p {
-                color: fade(black, 80%);
-                font-weight: 300;
                 font-size: 13px;
-                text-shadow: 0 .05em .1em white;
             }
-
             /* Prism.js Overrides */
-            code[class*="language-"],
-            pre[class*="language-"] {
-                background-color: transparent;
-                border: none;
-                border-radius: 0;
-                box-shadow: none;
-                font-size: 13px;
-                margin: 0;
-                padding: 0;
-                text-shadow: 0 .05em .1em white;
-            }
             pre[class*="language-"] {
                 display: inline-block;
                 margin: 0 auto;
@@ -255,7 +240,6 @@ header {
                 code[class*="language-"],
                 pre[class*="language-"] {
                     font-size: 16px;
-                    text-shadow: 0 .05em .1em white;
                 }
             }
         }
@@ -290,7 +274,6 @@ header {
                 code[class*="language-"],
                 pre[class*="language-"] {
                     font-size: 20px;
-                    text-shadow: 0 1px white;
                 }
             }
         }
@@ -465,9 +448,7 @@ footer {
     /* Carousel content should vertical align to top */
     position: absolute;
     top: 0px;
-    p {
-      color: rgba(255,255,255, 0.6) !important;
-    }
+    text-shadow: none;
 }
 
 @media (min-width: 480px) {

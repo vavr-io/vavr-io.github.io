@@ -8,8 +8,14 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white;
-	background: none;
-	text-shadow: 0 1px black;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 0 1px rgba(0,0,0,0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
@@ -107,7 +113,6 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
 	color: white;
-	/*background: hsla(0, 0%, 100%, .5);*/
 }
 
 .token.atrule,
