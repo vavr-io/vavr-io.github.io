@@ -136,6 +136,8 @@ aside {
             &:hover,
             &:focus {
                 color: white;
+                // when the brand is invisible then no link should be shown
+                cursor: default;
             }
             img {
                 // hide brand image when on top
@@ -157,6 +159,8 @@ aside {
                 &:hover,
                 &:focus {
                     color: darken(@theme-primary, 15%);
+                    // when the brand is visible then the link is shown
+                    cursor: pointer;
                 }
                 img {
                     // show brand image when scrolling down

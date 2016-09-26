@@ -115,6 +115,7 @@ aside {
   .navbar-default .navbar-header .navbar-brand:hover,
   .navbar-default .navbar-header .navbar-brand:focus {
     color: white;
+    cursor: default;
   }
   .navbar-default .navbar-header .navbar-brand img {
     opacity: 0;
@@ -137,6 +138,7 @@ aside {
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
     color: #7b5222;
+    cursor: pointer;
   }
   .navbar-default.affix .navbar-header .navbar-brand img {
     opacity: 1;
