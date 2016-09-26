@@ -99,7 +99,6 @@ aside {
             color: darken(@theme-primary, 15%);
         }
         img {
-            display: none;
             height: 22px;
             width: auto;
             margin-bottom: 8px;
@@ -139,7 +138,8 @@ aside {
                 color: white;
             }
             img {
-                display: inline-block;
+                // hide brand image when on top
+                opacity: 0;
             }
         }
         .nav > li > a,
@@ -153,13 +153,14 @@ aside {
             background-color: white;
             border-color: fade(@theme-dark, 5%);
             .navbar-header .navbar-brand {
-                color: @theme-primary;
+                color: black;
                 &:hover,
                 &:focus {
                     color: darken(@theme-primary, 15%);
                 }
                 img {
-                    display: inline-block;
+                    // show brand image when scrolling down
+                    opacity: 1;
                 }
             }
             .nav > li > a,
