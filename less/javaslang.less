@@ -355,14 +355,14 @@ img.tweets {
 //
 
 #sponsors {
-    background-color: #4c91af;
-    opacity: 0.6;
     padding: 50px 0 80px;
+    h2 {
+        color: white;
+    }
     p {
         color: white;
         font-family: Arial;
         font-size: 14px;
-        font-weight: bold;
         margin: 10px 0 0;
         a {
             color: white;
@@ -373,17 +373,26 @@ img.tweets {
             }
         }
     }
-    .jetbrains {
-        text-align: left;
-        img.idealogo {
-            height: 42px;
-        }
+    div.sponsor-logo {
+      position: relative;
+      height: 200px;
     }
-    .yourkit {
-        text-align: left;
-        img.yklogo {
-            height: 42px;
-        }
+    img.sponsor-logo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    img.touk-logo {
+        height: 200px;
+    }
+    img.idea-logo {
+        height: 80px;
+    }
+    img.yk-logo {
+        height: 60px;
     }
 }
 

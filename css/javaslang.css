@@ -309,15 +309,15 @@ img.tweets {
   margin: 0 auto;
 }
 #sponsors {
-  background-color: #4c91af;
-  opacity: 0.6;
   padding: 50px 0 80px;
+}
+#sponsors h2 {
+  color: white;
 }
 #sponsors p {
   color: white;
   font-family: Arial;
   font-size: 14px;
-  font-weight: bold;
   margin: 10px 0 0;
 }
 #sponsors p a {
@@ -328,17 +328,26 @@ img.tweets {
   color: black;
   text-decoration: underline;
 }
-#sponsors .jetbrains {
-  text-align: left;
+#sponsors div.sponsor-logo {
+  position: relative;
+  height: 200px;
 }
-#sponsors .jetbrains img.idealogo {
-  height: 42px;
+#sponsors img.sponsor-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-#sponsors .yourkit {
-  text-align: left;
+#sponsors img.touk-logo {
+  height: 200px;
 }
-#sponsors .yourkit img.yklogo {
-  height: 42px;
+#sponsors img.idea-logo {
+  height: 80px;
+}
+#sponsors img.yk-logo {
+  height: 60px;
 }
 footer {
   background-color: white;
@@ -388,9 +397,7 @@ footer #copyright p {
   /* Carousel content should vertical align to top */
   position: absolute;
   top: 0px;
-  /*font-weight: 300;*/
   text-shadow: none;
-  /*0 1px rgba(0, 0, 0, 0.3);*/
 }
 @media (min-width: 480px) {
   .carousel {
