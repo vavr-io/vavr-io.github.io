@@ -433,30 +433,29 @@ footer {
 // Caroussel
 
 .carousel {
-  height: 240px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-.carousel .item {
-  height: 240px;
+    height: 240px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    .item {
+        height: 240px;
+    }
 }
 .carousel-control {
     filter: alpha(opacity=10);
     opacity: .10;
-}
-.carousel-control.left, .carousel-control.right {
-    background-image: none;
-}
-.carousel-control:hover,
-.carousel-control:focus {
-  filter: alpha(opacity=26);
-  opacity: .26;
-}
-.carousel-control .glyphicon-chevron-left,
-.carousel-control .glyphicon-chevron-right,
-.carousel-control .icon-prev,
-.carousel-control .icon-next {
-  font-size: 40px;
+    &.left, &.right {
+        background-image: none;
+    }
+    &:hover,
+    &:focus {
+        filter: alpha(opacity=26);
+        opacity: .26;
+    }
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right,
+    .icon-prev, .icon-next {
+        font-size: 40px;
+    }
 }
 .carousel-caption {
     /* Carousel content should vertical align to top */
@@ -470,9 +469,9 @@ footer {
         height: 260px;
         margin-top: 15px;
         margin-bottom: 5px;
-    }
-    .carousel .item {
-        height: 260px;
+        .item {
+            height: 260px;
+        }
     }
 }
 
@@ -481,19 +480,20 @@ footer {
         height: 300px;
         margin-top: 30px;
         margin-bottom: 10px;
-    }
-    .carousel .item {
-        height: 300px;
+        .item {
+            height: 300px;
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-prev,
-  .carousel-control .icon-next {
-    font-size: 50px;
-  }
+    .carousel-control {
+        .glyphicon-chevron-left,
+        .glyphicon-chevron-right,
+        .icon-prev, .icon-next {
+            font-size: 50px;
+        }
+    }
 }
 
 // Button Styles
