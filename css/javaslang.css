@@ -104,6 +104,10 @@ aside {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+.navbar-default .nav > li > form {
+  padding-top: 12px;
+  padding-left: 15px;
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
