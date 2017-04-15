@@ -1,6 +1,6 @@
-# Javaslang Website
+# Vavr Website
 
-This is the source of the Javaslang website located at http://javaslang.io.
+This is the source of the Vavr website located at http://vavr.io.
 
 ## Thanks
 
