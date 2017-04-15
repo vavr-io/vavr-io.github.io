@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Javaslang is an object-functional library for Java 8+">
+    <meta name="description" content="Vavr is an object-functional library for Java 8+">
     <meta name="author" content="Daniel Dietrich">
 
-    <title>Javaslang</title>
+    <title>Vavr</title>
 
     <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon-precomposed.png">
@@ -28,8 +28,8 @@
     <!-- Syntax Highlighting -->
     <link rel="stylesheet" href="css/prism.css" type="text/css">
 
-    <!-- Javaslang CSS // IMPORTANT: LAST CSS LOADED BECAUSE OF OVERRIDES -->
-    <link rel="stylesheet" href="css/javaslang.css" type="text/css">
+    <!-- Vavr CSS // IMPORTANT: LAST CSS LOADED BECAUSE OF OVERRIDES -->
+    <link rel="stylesheet" href="css/vavr.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +59,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="img/javaslang-logo-small.png" />
+                    <img src="img/vavr-logo-small.png" />
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,7 +73,7 @@
                       </form>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://blog.javaslang.io">Blog</a>
+                        <a class="page-scroll" href="http://blog.vavr.io">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#downloads">Downloads</a>
@@ -96,7 +96,7 @@
             <div class="header-content-inner">
                 <div class="header-content-wrapper">
                     <h1 class="brand-heading">
-                        <img class="brand-heading" src="img/javaslang-logo.png" />
+                        <img class="brand-heading" src="img/vavr-logo.png" />
                     </h1>
                     <h2 class="brand-heading">Concept in Code</h2>
                 </div>
@@ -128,7 +128,7 @@
                     <div class="item">
                       <div class="container">
                         <div class="carousel-caption">
-                            <p>Javaslang and Java are fully interoperable.</p>
+                            <p>Vavr and Java are fully interoperable.</p>
                             <pre><code class="language-java">java.util.List&lt;Integer&gt; result =
     iterator.map(String::length).toJavaList();</code></pre>
                         </div>
@@ -158,7 +158,7 @@
                     <div class="item">
                       <div class="container">
                         <div class="carousel-caption">
-                            <p>Java's <em>Optional</em> is not Serializable. We use Javaslang's <em>Option</em> for remote operations. Check out our JSON module!</p>
+                            <p>Java's <em>Optional</em> is not Serializable. We use Vavr's <em>Option</em> for remote operations. Check out our JSON module!</p>
                             <pre><code class="language-java">class Person implements Serializable {
     final Option&lt;String&gt; title;
     final String name;
@@ -189,7 +189,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Downloads</h2>
                     <hr class="light">
-                    <p class="text-faded">Javaslang <em>core</em> is a functional library for Java 8+. It helps to reduce the amount of code and to increase the robustness. A first step towards functional programming is to start thinking in immutable values. Javaslang provides immutable collections and the necessary functions and control structures to operate on these values. The results are beautiful and just work.</p>
+                    <p class="text-faded">Vavr <em>core</em> is a functional library for Java 8+. It helps to reduce the amount of code and to increase the robustness. A first step towards functional programming is to start thinking in immutable values. Vavr provides immutable collections and the necessary functions and control structures to operate on these values. The results are beautiful and just work.</p>
                 </div>
             </div>
             <div class="row">
@@ -204,7 +204,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="feature-box-primary">
-                        <a target="_blank" href="http://javaslang.github.io/javaslang-docs">
+                        <a target="_blank" href="http://docs.vavr.io">
                             <i class="fa fa-4x fa-book"></i>
                             <h3>Documentation</h3>
                             <p class="text-faded">The documentation gives an overview and covers the concepts in depth. It is the best way to get started with Javaslang.</p>
@@ -222,10 +222,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="feature-box-primary">
-                        <a target="_blank" href="https://github.com/javaslang/javaslang">
+                        <a target="_blank" href="https://github.com/vavr-io/vavr">
                             <i class="fa fa-4x fa-github"></i>
                             <h3>Source Code</h3>
-                            <p class="text-faded">Javaslang is open source and can be found on Github. It is distributed under the Apache 2.0 License.</p>
+                            <p class="text-faded">Vavr is open source and can be found on Github. It is distributed under the Apache 2.0 License.</p>
                         </a>
                     </div>
                 </div>
@@ -236,35 +236,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Javaslang Modules</h2>
+                    <h2 class="section-heading">Vavr Modules</h2>
                     <hr class="primary">
-                    <p>There are several additional modules that group around Javaslang's <em>core</em>. All of these are supported by the Javaslang open source organization.</p>
+                    <p>There are several additional modules that group around Vavr's <em>core</em>. All of these are supported by the Vavr open source organization.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="feature-box">
-                        <a target="_blank" href="https://github.com/javaslang/javaslang-gwt">
+                        <a target="_blank" href="https://github.com/vavr-io/vavr-gwt">
                             <i class="fa fa-4x fa-cube" data-wow-delay=".3s"></i>
-                            <h3>javaslang-gwt</h3>
-                            <p class="text-muted">GWT module for Javaslang.</p>
+                            <h3>vavr-gwt</h3>
+                            <p class="text-muted">GWT module for Vavr.</p>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="feature-box">
-                        <a target="_blank" href="https://github.com/javaslang/javaslang">
+                        <a target="_blank" href="https://github.com/vavr-io/vavr">
                             <i class="fa fa-4x fa-cube" data-wow-delay=".1s"></i>
-                            <h3>javaslang-match</h3>
-                            <p class="text-muted">Adds compile time support for Javaslang's structural pattern matching feature.</p>
+                            <h3>vavr-match</h3>
+                            <p class="text-muted">Adds compile time support for Vavr's structural pattern matching feature.</p>
                         </a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="feature-box">
-                        <a target="_blank" href="https://github.com/javaslang/javaslang">
+                        <a target="_blank" href="https://github.com/vavr-io/vavr">
                             <i class="fa fa-4x fa-cube" data-wow-delay=".1s"></i>
-                            <h3>javaslang-test</h3>
+                            <h3>vavr-test</h3>
                             <p class="text-muted">A property check framework for random testing of program properties.</p>
                         </a>
                     </div>
@@ -275,9 +275,9 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="feature-box">
-                        <a target="_blank" href="https://github.com/javaslang/javaslang-jackson">
+                        <a target="_blank" href="https://github.com/vavr-io/vavr-jackson">
                             <i class="fa fa-4x fa-cube" data-wow-delay=".3s"></i>
-                            <h3>javaslang-jackson</h3>
+                            <h3>vavr-jackson</h3>
                             <p class="text-muted">Jackson datatype module, the standard JSON library for Java.</p>
                         </a>
                     </div>
@@ -286,7 +286,7 @@
                     <div class="feature-box">
                         <a target="_blank" href="https://github.com/javaslang/javaslang-render">
                             <i class="fa fa-4x fa-cube" data-wow-delay=".3s"></i>
-                            <h3>javaslang-render</h3>
+                            <h3>vavr-render</h3>
                             <p class="text-muted">A rendering library, currently housing tree renderers (ascii and graphviz).</p>
                         </a>
                     </div>
@@ -301,7 +301,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2>Please visit our <a target="_blank" href="http://blog.javaslang.io"><strong>Blog</strong></a> or find us here:</h2>
+                    <h2>Please visit our <a target="_blank" href="http://blog.vavr.io"><strong>Blog</strong></a> or find us here:</h2>
                 </div>
             </div>
         </div>
@@ -310,7 +310,7 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-2 text-center">
                     <div class="feature-box-primary">
-                        <a target="_blank" href="https://gitter.im/javaslang/javaslang">
+                        <a target="_blank" href="https://gitter.im/vavr-io/vavr">
                             <i class="fa fa-4x fa-align-right" style="transform: rotate(90deg)"></i>
                             <h3>Gitter Chat</h3>
                         </a>
@@ -318,7 +318,7 @@
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="feature-box-primary">
-                        <a target="_blank" href="https://twitter.com/_javaslang">
+                        <a target="_blank" href="https://twitter.com/vavr_io">
                             <i class="fa fa-4x fa-twitter"></i>
                             <h3>Twitter</h3>
                         </a>
@@ -326,7 +326,7 @@
                 </div>
                 <div class="col-md-2 text-center">
                     <div class="feature-box-primary">
-                        <a target="_blank" href="mailto:mail@javaslang.io">
+                        <a target="_blank" href="mailto:mail@vavr.io">
                             <i class="fa fa-4x fa-envelope"></i>
                             <h3>Email</h3>
                         </a>
@@ -340,7 +340,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Thank you for using Javaslang!</h2>
+                    <h2 class="section-heading">Thank you for using Vavr!</h2>
                     <hr class="primary">
                     <img class="img-responsive tweets" src="img/media/tweets.png">
                 </div>
@@ -364,7 +364,7 @@
                         </a>
                     </div>
                     <p>
-                      <a href="http://touk.pl" target="_blank">TouK</a> uses and supports Javaslang library by promoting it on conferences and helping with graphic design and production of promotional materials.
+                      <a href="http://touk.pl" target="_blank">TouK</a> uses and supports Vavr library by promoting it on conferences and helping with graphic design and production of promotional materials.
                     </p>
                     <p>
                       <a href="http://touk.pl" target="_blank">TouK</a> is a software house that leverages functional programming providing custom software where correctness, reliability, and scalability are top requirements.
@@ -377,7 +377,7 @@
                         </a>
                     </div>
                     <p>
-                        <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> is our preferred IDE to develop Javaslang.
+                        <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> is our preferred IDE to develop Vavr.
                         <a href="https://www.jetbrains.com" target="_blank">JetBrains</a> supports open source projects with its products and makes professional software development a more productive and enjoyable experience.
                     </p>
                 </div>
@@ -388,7 +388,7 @@
                         </a>
                     </div>
                     <p>
-                        Javaslang is using <a href="https://www.yourkit.com/java/profiler/index.jsp" target="_blank">YourKit Java Profiler</a> to analyze the runtime behavior.
+                        Vavr is using <a href="https://www.yourkit.com/java/profiler/index.jsp" target="_blank">YourKit Java Profiler</a> to analyze the runtime behavior.
                         YourKit supports open source projects with its full-featured Java Profiler.
                         YourKit, LLC is the creator of <a href="https://www.yourkit.com/java/profiler/index.jsp" target="_blank">YourKit Java Profiler</a> and <a href="https://www.yourkit.com/.net/profiler/index.jsp" target="_blank">YourKit .NET Profiler</a>, innovative and intelligent tools for profiling Java and .NET applications.
                     </p>
@@ -401,7 +401,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <p>
-                        &copy; 2014-<span id="copyright_year">2016</span> Javaslang. All Rights Reserved &middot;
+                        &copy; 2014-<span id="copyright_year">2016</span> Vavr. All Rights Reserved &middot;
                         <a href="disclaimer.html" target="_blank">Legal Disclaimer</a> &middot;
                         <a href="contact.html" target="_blank">Contact</a>
                     </p>
@@ -412,7 +412,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/javaslang.js"></script>
+    <script src="js/vavr.js"></script>
     <script src="js/prism.js"></script>
     <script>
         $(document).ready(function(){
