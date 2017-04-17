@@ -192,15 +192,6 @@ header {
     min-height: auto;
     text-align: center;
     color: white;
-    .credit-line {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        .sans-serif-font;
-        font-size: 0.8em;
-        opacity: 0.5;
-    }
     .header-content {
         position: relative;
         text-align: center;
@@ -223,6 +214,14 @@ header {
             }
             h2.brand-heading {
                 font-size: 18px;
+                .java-tm {
+                    vertical-align: top;
+                    opacity: 0.5;
+                    font-size:0.4em;
+                    margin-top: 0.2em;
+                    margin-left:-0.5em;
+                    margin-right:-0.5em;
+                }
             }
             .brand-heading > * {
                 display: inline-block;
@@ -427,6 +426,9 @@ footer {
             opacity: 0.5;
             font-family: Arial;
             font-size: 11px;
+            .credit-line {
+                opacity: 0.5;
+            }
         }
     }
 }
