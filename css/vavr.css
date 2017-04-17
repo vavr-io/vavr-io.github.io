@@ -189,6 +189,14 @@ header .header-content .header-content-inner h1.brand-heading {
 header .header-content .header-content-inner h2.brand-heading {
   font-size: 18px;
 }
+header .header-content .header-content-inner h2.brand-heading div {
+  display: block;
+}
+header .header-content .header-content-inner h2.brand-heading .credit-line {
+  font-size: 0.4em;
+  margin-top: 2em;
+  opacity: 0.5;
+}
 header .header-content .header-content-inner .brand-heading > * {
   display: inline-block;
 }
@@ -210,7 +218,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 20px;
   }
   header .header-content .header-content-inner img.brand-heading {
-    width: 350px;
+    width: 300px;
   }
   header .header-content .header-content-inner p {
     font-size: 16px;
@@ -241,7 +249,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
     font-size: 30px;
   }
   header .header-content .header-content-inner img.brand-heading {
-    width: 650px;
+    width: 360px;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -256,7 +264,7 @@ header .header-content .header-content-inner pre[class*="language-"] {
 }
 @media (min-width: 1024px) {
   header .header-content .header-content-inner img.brand-heading {
-    width: 800px;
+    width: 420px;
   }
 }
 .section-heading {
