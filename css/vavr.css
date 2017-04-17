@@ -163,6 +163,15 @@ header {
   text-align: center;
   color: white;
 }
+header .credit-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
 header .header-content {
   position: relative;
   text-align: center;
@@ -188,14 +197,6 @@ header .header-content .header-content-inner h1.brand-heading {
 }
 header .header-content .header-content-inner h2.brand-heading {
   font-size: 18px;
-}
-header .header-content .header-content-inner h2.brand-heading div {
-  display: block;
-}
-header .header-content .header-content-inner h2.brand-heading .credit-line {
-  font-size: 0.4em;
-  margin-top: 2em;
-  opacity: 0.5;
 }
 header .header-content .header-content-inner .brand-heading > * {
   display: inline-block;
