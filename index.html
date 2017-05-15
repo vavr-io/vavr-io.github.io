@@ -130,7 +130,7 @@
                         <div class="carousel-caption">
                             <p>Vavr and Java are fully interoperable.</p>
                             <pre><code class="language-java">java.util.List&lt;Integer&gt; result =
-    iterator.map(String::length).toJavaList();</code></pre>
+    iterator.map(String::length).asJava();</code></pre>
                         </div>
                       </div>
                     </div>
@@ -139,8 +139,8 @@
                         <div class="carousel-caption">
                             <p>Structural <em>pattern matching</em> is an easy way to <em>decompose</em> values. The result is ... a value!</p>
                             <pre><code class="language-java">Number num = Match(personOption).of(
-    Case(Some(Person($())), person -&gt; 1.0d),
-    Case(None(), 0)
+    Case($Some($Person($())), person -&gt; 1.0d),
+    Case($None(), 0)
 );</code></pre>
                         </div>
                       </div>
@@ -149,7 +149,7 @@
                       <div class="container">
                         <div class="carousel-caption">
                             <p>The <em>Try</em> monad represents the result state of a computation which may be a <em>Success</em> or a <em>Failure</em>.</p>
-                            <pre><code class="language-java">R result = Try.of(() -&gt; mightFail())
+                            <pre><code class="language-java">R result = Try(() -&gt; mightFail())
    .recover(x -&gt; ...)
    .getOrElse(defaultValue);</code></pre>
                         </div>
