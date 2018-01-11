@@ -192,10 +192,11 @@ header .header-content .header-content-inner h2.brand-heading {
 header .header-content .header-content-inner h2.brand-heading .java-tm {
   vertical-align: top;
   opacity: 0.5;
-  font-size: 0.4em;
+  font-size: 0.5em;
+  font-weight: bold;
   margin-top: 0.2em;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  margin-left: -0.2em;
+  margin-right: -0.4em;
 }
 header .header-content .header-content-inner .brand-heading > * {
   display: inline-block;
