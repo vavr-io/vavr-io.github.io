@@ -353,6 +353,9 @@ img.tweets {
   right: 0;
   margin: auto;
 }
+#sponsors img.stickers-craft-logo {
+  height: 222px;
+}
 #sponsors img.touk-logo {
   height: 200px;
 }
