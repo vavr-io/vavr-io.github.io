@@ -321,31 +321,31 @@ header .header-content .header-content-inner pre[class*="language-"] {
 img.tweets {
   margin: 0 auto;
 }
-#sponsors {
+#supporters {
   padding: 50px 0 80px;
 }
-#sponsors h2 {
+#supporters h2 {
   color: white;
 }
-#sponsors p {
+#supporters p {
   color: white;
   font-family: Arial;
   font-size: 14px;
   margin: 10px 0 0;
 }
-#sponsors p a {
+#supporters p a {
   color: white;
   text-decoration: underline;
 }
-#sponsors p a:hover {
+#supporters p a:hover {
   color: black;
   text-decoration: underline;
 }
-#sponsors div.sponsor-logo {
+#supporters div.supporter-logo {
   position: relative;
   height: 200px;
 }
-#sponsors img.sponsor-logo {
+#supporters img.supporter-logo {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -353,16 +353,16 @@ img.tweets {
   right: 0;
   margin: auto;
 }
-#sponsors img.stickers-craft-logo {
+#supporters img.stickers-craft-logo {
   height: 222px;
 }
-#sponsors img.touk-logo {
+#supporters img.touk-logo {
   height: 200px;
 }
-#sponsors img.idea-logo {
+#supporters img.idea-logo {
   height: 80px;
 }
-#sponsors img.yk-logo {
+#supporters img.yk-logo {
   height: 60px;
 }
 footer {
