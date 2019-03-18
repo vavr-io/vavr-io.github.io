@@ -47,8 +47,33 @@
       ga('create', 'UA-62872702-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <style>
+        html, body {
+            color: #fff;
+            background: #45484d; /* Old browsers */
+            background: -moz-radial-gradient(center, ellipse cover,  #45484d 0%, #000000 100%); /* FF3.6+ */
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+            background: -webkit-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%); /* Opera 12+ */
+            background: -ms-radial-gradient(center, ellipse cover,  #45484d 0%,#000000 100%); /* IE10+ */
+            background: radial-gradient(ellipse at center,  #45484d 0%,#000000 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            text-align:center;
+        }
+        [class*="BT"]{width:250px;display:block;position:absolute;padding:0;border-color:#0e0e0e;margin:0 0 10px;line-height:6px;border-style:solid;left:50%;margin-left:-125px;height:60px;}
+        [class*="BT"] hover{position:absolute;z-index:5;width:246px;margin-left:-370px;  transition: all 0.3s ease-out 0s;    background: -moz-linear-gradient(45deg,  rgba(255,255,255,0) 0%, rgba(135,135,135,0.38) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(135,135,135,0.38)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */background: -webkit-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(135,135,135,0.38) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */background: -o-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(135,135,135,0.38) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */background: -ms-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(135,135,135,0.38) 50%,rgba(255,255,255,0) 100%); /* IE10+ */background: linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(135,135,135,0.38) 50%,rgba(255,255,255,0) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */  height:60px;margin-top:-30px;}
+        [class*="OH"]{overflow:hidden;}
+        [class*="BR"]{border-width:2px;}
+        [class*="R6"]{border-radius:6px;}
+        [class*="NF"]{background:transparent;}
+        [class*="BT"]:hover hover{  margin-left:123px;}
+        [class*="TU"]{text-transform:uppercase;}
+        [class*="PT"]{cursor:pointer;}
+        [class*="BT"] span{  position:absolute;  width:200px;  margin-left:-100px;  z-index:3;}
+        canvas{margin: 0;padding: 0;display:block;position:absolute;margin-top:-30px;}
+    </style>
 </head>
-<body id="page-top">
+<body id="page-top" class="five-years">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -64,6 +89,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <!--
                     <li>
                       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick">
@@ -72,6 +98,7 @@
                           <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
                       </form>
                     </li>
+                    -->
                     <li>
                         <a class="page-scroll" href="http://blog.vavr.io">Blog</a>
                     </li>
@@ -105,18 +132,29 @@
                         Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.<br>
                         Es wird best&auml;tigt, dass "JAVA" eine eingetragene Marke von Oracle America, Inc. ist.
                     </p>            
-            </div>
+                </div>
                 <div id="codeCarousel" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <div class="container">
-                        <div class="carousel-caption">
-                            <p>A new powerful collection library saves us from source.stream().really("?").collect(sink()) pipelines.</p>
-                            <pre><code class="language-java">List&lt;String&gt; names = persons
-    .filter(p -&gt; p.age &gt; 12)
-    .map(Person::getName);</code></pre>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>🎉⭐️ VAVR TURNS <strong>5</strong> YO ☘️🍄</h2>
+                                <p style="font-size: 1.5em">
+                                    The first version, called <em>Javaslang</em>, was released on 19h march 2014.
+                                    A big <strong>thank you</strong> to all of our users, committers and sponsors for supporting VAVR! 👍🏼
+                                </p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <p>A new powerful collection library saves us from source.stream().really("?").collect(sink()) pipelines.</p>
+                                <pre><code class="language-java">List&lt;String&gt; names = persons
+        .filter(p -&gt; p.age &gt; 12)
+        .map(Person::getName);</code></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="item">
                       <div class="container">
@@ -182,10 +220,19 @@
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                </div>
-                <div>
-                    <a href="#downloads" class="btn btn-primary btn-xl page-scroll">Go Functional</a>
-                </div>
+            </div>
+            <!--
+            <div>
+                <a href="#downloads" class="btn btn-primary btn-xl page-scroll">Go Functional</a>
+            </div>
+            -->
+            <a style="color:white" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NFGA2GVBD94NL">
+                <button id="funky-button" class="btn BT-OH-BR-R6-NF-FH-FP-TU-PT">
+                    <canvas id="canvas"></canvas>
+                    <hover></hover>
+                    <span style="color:white;font-size: 1.3em">🎁 SAY THANK YOU 🎁</span>
+                </button>
+            </a>
         </div>
     </header>
     <section class="bg-primary" id="downloads">
@@ -447,11 +494,92 @@
     <script src="js/prism.js"></script>
     <script>
         $(document).ready(function(){
-            // set carousel speed
             $('#codeCarousel').carousel({
                 interval: 8000
             });
             $("#copyright_year").text(new Date().getFullYear());
+
+            // funky button
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+                window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+            }
+    
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function(callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+                    timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
+            }
+    
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function(id) {
+                    clearTimeout(id);
+                };
+            }
+
+            var startBtn = document.getElementById('funky-button');
+            var requestID;
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            var posX = 0;
+            var W = 246;
+            var H = 60;
+            var circles = []; 
+    
+            canvas.width = 246;
+            canvas.height = 60;
+
+            function animate() {
+                requestID = requestAnimationFrame(animate);
+                ctx.fillStyle = "rgba(0,0,0,0.15)";
+                ctx.fillRect(0, 0, W, H);
+                for (var j = 0; j < circles.length; j++){
+                    var c = circles[j];
+                    ctx.beginPath();
+                    ctx.arc(c.x, c.y, c.radius, 0, Math.PI*2, false);
+                    ctx.fillStyle = "rgba("+c.r+", "+c.g+", "+c.b+", 0.5)";
+                    ctx.fill();
+                    c.x += c.vx;
+                    c.y += c.vy;
+                    c.radius -= .02;
+                    if(c.radius < 0) {
+                        circles[j] = new create();
+                    }
+                }
+            }
+            function create() {
+                this.x = W/2;
+                this.y = H/2;
+                this.radius = 2 + Math.random()*3; 
+                this.vx = -5 + Math.random()*10;
+                this.vy = -5 + Math.random()*10;
+                this.r = Math.round(Math.random())*255;
+                this.g = Math.round(Math.random())*255;
+                this.b = Math.round(Math.random())*255;
+            }
+            for (var i = 0; i < 500; i++) {
+                circles.push(new create());
+            }
+            startBtn.addEventListener('mouseover', function(e) {
+                e.preventDefault();
+                requestID = requestAnimationFrame(animate);
+            });
+            startBtn.addEventListener('mouseout', function(e) {
+                e.preventDefault();
+                cancelAnimationFrame(requestID);
+                e.preventDefault();
+                posX = 0;
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillRect(posX, 0, boxWidth, canvas.height);
+            });
+
         });
     </script>
 </body>
