@@ -1,0 +1,1 @@
+lessc vavr.less > ../css/vavr.css
