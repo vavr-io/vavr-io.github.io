@@ -1,6 +1,6 @@
 # Vavr Website
 
-This is the source of the Vavr website located at http://vavr.io.
+This is the source of the Vavr website located at http://vavr.io
 
 ## Thanks
 
