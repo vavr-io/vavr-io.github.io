@@ -1,47 +1,74 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+(function () {
+    'use strict';
 
-(function($) {
-    "use strict"; // Start of use strict
+    // --- Navbar scroll ---
+    var nav = document.getElementById('nav');
+    function onScroll() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+    // --- Mobile menu ---
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function () {
+        toggle.classList.toggle('active');
+        links.classList.toggle('open');
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+            toggle.classList.remove('active');
+            links.classList.remove('open');
+        });
     });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
+    // --- Install tabs ---
+    var installTabs = document.querySelectorAll('.install-tab');
+    var installPanels = document.querySelectorAll('.install-panel');
+    installTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var target = tab.getAttribute('data-target');
+            installTabs.forEach(function (t) { t.classList.remove('active'); });
+            installPanels.forEach(function (p) { p.classList.remove('active'); });
+            tab.classList.add('active');
+            document.getElementById('install-' + target).classList.add('active');
+        });
     });
 
-/*
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-*/
+    // --- Copy to clipboard ---
+    var copyBtn = document.querySelector('.copy-btn');
+    if (copyBtn) {
+        copyBtn.addEventListener('click', function () {
+            var activePanel = document.querySelector('.install-panel.active');
+            var text = activePanel ? activePanel.textContent.trim() : '';
+            navigator.clipboard.writeText(text).then(function () {
+                copyBtn.classList.add('copied');
+                copyBtn.querySelector('span').textContent = 'Copied!';
+                setTimeout(function () {
+                    copyBtn.classList.remove('copied');
+                    copyBtn.querySelector('span').textContent = 'Copy';
+                }, 2000);
+            });
+        });
+    }
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+    // --- Copyright year ---
+    var yearEl = document.getElementById('copyright_year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-})(jQuery); // End of use strict
+    // --- Scroll fade-in ---
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(function (el) {
+        observer.observe(el);
+    });
+
+})();
