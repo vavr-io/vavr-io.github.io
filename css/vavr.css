@@ -605,6 +605,69 @@ code {
   transform: translate(0, 0);
 }
 
+/* === Sponsor === */
+#sponsor {
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+
+.sponsor-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 40px 36px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.sponsor-text { flex: 1; }
+
+.sponsor-text h3 {
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.sponsor-text p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 480px;
+}
+
+.btn-sponsor {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #db61a2;
+  border: 1px solid rgba(219, 97, 162, 0.25);
+  background: rgba(219, 97, 162, 0.05);
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.btn-sponsor:hover {
+  background: rgba(219, 97, 162, 0.1);
+  border-color: rgba(219, 97, 162, 0.4);
+  box-shadow: 0 0 20px rgba(219, 97, 162, 0.08);
+  color: #db61a2;
+}
+
+.btn-sponsor svg {
+  flex-shrink: 0;
+}
+
 /* === Footer === */
 footer {
   border-top: 1px solid var(--border);
@@ -729,6 +792,13 @@ pre[class*="language-"] { background: transparent; }
   .hero-title { font-size: clamp(3rem, 12vw, 4rem); }
 
   .modules-grid { grid-template-columns: 1fr; }
+
+  .sponsor-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 24px;
+  }
 
   .sponsors-row { gap: 32px; }
 
